@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "eat",
+    "todo": "eat food",
+    "crated_by": "kapil",
+    "date": "01/01/1995"
+  },
+  {
+    "id": 2,
+    "title": "drink",
+    "todo": "drink water",
+    "crated_by": "kapil",
+    "date": "01/02/1995"
+  }
+]
