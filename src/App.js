@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Todo from './components/todoApp/Todo';
+import DataRender from './components/dataTable/DataRender';
+import{Route ,BrowserRouter as Router } from 'react-router-dom';
+// import Home from './components/Home';
+ import DataList from './components/dataTable/DataList';
+import AvailableVehicle from './components/vehicleBooking/AvailableVehicle';
+import Home from './components/Home';
+import HTree from './components/tree/HTree';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Router>
+       <Route path="/" exact component={Home}/>
+       <Route path="/todo" exact component={Todo}/>
+        <Route path="/datarender" exact component={DataRender}/>
+        <Route path="/datalist" exact component={DataList}/>
+        <Route path="/avail" exact component={AvailableVehicle}/>
+        <Route path="/tree" exact component ={HTree}/>
+        </Router>  
     </div>
   );
 }
